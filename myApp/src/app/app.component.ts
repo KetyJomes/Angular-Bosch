@@ -8,8 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'myApp';
   count = 0;
+  text = "";
 
   foiClicado = () => {
     this.count++;
+  }
+
+  foiEscrito = () => {
+    this.text;
   }
 }
