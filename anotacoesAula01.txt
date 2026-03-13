@@ -1,0 +1,3 @@
+13/03/2026
+
+O que é Angular? O Angular é um framework frontend de código aberto, mantido pelo Google, baseado em TypeScript para criar aplicações web dinâmicas e de página única (SPAs)
