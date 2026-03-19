@@ -1,0 +1,6 @@
+19/03/2026
+Aula 02
+
+app-routing.module - onde fica as rotas.
+
+criando pastas = ng g c feature(nome da primeira pasta)/login-page(nome da segunda pasta)
