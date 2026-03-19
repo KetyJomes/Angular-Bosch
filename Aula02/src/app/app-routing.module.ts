@@ -3,9 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './feature/main-page/main-page.component';
 import { LoginPageComponent } from './feature/login-page/login-page.component';
 import { NotFoundPageComponent } from './feature/not-found-page/not-found-page.component';
+import { MercadoPageComponent } from './feature/main-page/mercado-page/mercado-page.component';
+import { ComidaPageComponent } from './feature/main-page/comida-page/comida-page.component';
 
 const routes: Routes = [
-  {path: "", component:MainPageComponent},
+  {path: "", component:MainPageComponent, children:[
+    {path: "mercado", component: MercadoPageComponent},
+    {path: "comida", component: ComidaPageComponent}
+  ]},
   {path: "login", component:LoginPageComponent},
   {path: "**", component:NotFoundPageComponent}
 ];

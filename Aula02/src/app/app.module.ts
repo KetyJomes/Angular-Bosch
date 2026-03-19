@@ -8,6 +8,8 @@ import { MainPageComponent } from './feature/main-page/main-page.component';
 import { NotFoundPageComponent } from './feature/not-found-page/not-found-page.component';
 import { HeaderComponent } from './share/header/header.component';
 import { NavComponent } from './share/nav/nav.component';
+import { MercadoPageComponent } from './feature/main-page/mercado-page/mercado-page.component';
+import { ComidaPageComponent } from './feature/main-page/comida-page/comida-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavComponent } from './share/nav/nav.component';
     MainPageComponent,
     NotFoundPageComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
+    MercadoPageComponent,
+    ComidaPageComponent
     
   ],
   imports: [
