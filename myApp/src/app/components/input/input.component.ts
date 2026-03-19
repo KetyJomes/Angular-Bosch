@@ -6,13 +6,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent {
-  isDigit: string =  "";
-  @Output()
-    Digit: EventEmitter<void> = new EventEmitter();
-  
   @Input()
-    label: string = "";
-    digit = () => {
-      this.Digit.emit();
-    }
+    Value: string = "";
+
+  @Output()
+    changed: EventEmitter<string> = new EventEmitter();
+
+  onInputChange = (value: any) => {
+    const stringValue = value.srcElement?.value;
+    this.changed.emit(stringValue)
+
+  }
 }

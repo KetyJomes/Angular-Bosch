@@ -10,11 +10,9 @@ export class AppComponent {
   count = 0;
   text = "";
 
-  foiClicado = () => {
-    this.count++;
+  inputValue = ""
+  inputValueChanged =(value: string ) => {
+    this.inputValue = value
   }
 
-  foiEscrito = () => {
-    this.text;
-  }
 }

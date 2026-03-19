@@ -3,7 +3,7 @@ input {
     border-color: black;
     height: 3rem;
     padding: 0 1.5rem;
-    color:white;
+    /* color:white; */
     /* cursor: pointer; */
     border-radius: 2px;
     outline: none;
