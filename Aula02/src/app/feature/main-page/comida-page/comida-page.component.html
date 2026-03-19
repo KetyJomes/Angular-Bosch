@@ -1,2 +1,13 @@
-<p>comida-page works!</p>
-{{pessoas[1].name}}
+<!-- 
+{{comidas[food].id}} -->
+<section>
+    <div class="_comidas">
+     
+        <div class="_comida" >
+            <app-card *ngFor="let food of comidas; track: $index"                                                                                                                                                                       
+                [infoComida]="food">
+            </app-card>
+        </div>
+    </div>
+
+</section>

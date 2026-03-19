@@ -10,6 +10,7 @@ import { HeaderComponent } from './share/header/header.component';
 import { NavComponent } from './share/nav/nav.component';
 import { MercadoPageComponent } from './feature/main-page/mercado-page/mercado-page.component';
 import { ComidaPageComponent } from './feature/main-page/comida-page/comida-page.component';
+import { CardComponent } from './share/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ComidaPageComponent } from './feature/main-page/comida-page/comida-page
     HeaderComponent,
     NavComponent,
     MercadoPageComponent,
-    ComidaPageComponent
+    ComidaPageComponent,
+    CardComponent
     
   ],
   imports: [
