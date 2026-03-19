@@ -7,12 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
-  count = 0;
-  text = "";
 
-  inputValue = ""
+  nome = "Ketlyn"
   inputValueChanged =(value: string ) => {
-    this.inputValue = value
+    this.nome = value
   }
 
 }
