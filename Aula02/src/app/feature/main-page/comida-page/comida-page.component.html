@@ -17,21 +17,18 @@
 
   <div class="_comidas">
 
-    <app-comida-modal 
-      *ngIf="focusedFood"
+    <app-comida-modal *ngIf="focusedFood"
       [item]="focusedFood"
       (onClose)="focusedFood = undefined">
     </app-comida-modal>
 
     <div class="_comida">
-      <app-card 
-        *ngFor="let food of comidas"
+      <app-card *ngFor="let food of comidas"
         [infoComida]="food"
         (click)="onCardClick(food)">
       </app-card>
     </div>
 
   </div>
-</section>
-
+</section>  
 

@@ -13,6 +13,7 @@ import { ComidaPageComponent } from './feature/main-page/comida-page/comida-page
 import { CardComponent } from './share/card/card.component';
 import { ComidaModalComponent } from './feature/main-page/comida-page/comida-modal/comida-modal.component';
 import { MercadoModalComponent } from './feature/main-page/mercado-page/mercado-modal/mercado-modal.component';
+import { ModalComponent } from './share/modal/modal.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MercadoModalComponent } from './feature/main-page/mercado-page/mercado-
     ComidaPageComponent,
     CardComponent,
     ComidaModalComponent,
-    MercadoModalComponent
+    MercadoModalComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

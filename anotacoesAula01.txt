@@ -1,3 +1,41 @@
 13/03/2026
 
-O que é Angular? O Angular é um framework frontend de código aberto, mantido pelo Google, baseado em TypeScript para criar aplicações web dinâmicas e de página única (SPAs)
+O que é Angular? O Angular é um framework frontend de código aberto, mantido pelo Google, baseado em TypeScript 
+para criar aplicações web dinâmicas e de página única SPAs (single page application)
+
+Framework vs library (Biblioteca): 
+Framework conjunto de ferramenta,é um conjunto de ferramentas, bibliotecas, convenções e boas práticas pré-definidas que funciona como um "esqueleto" 
+ou base para o desenvolvimento rápido e organizado de softwares. Ele evita retrabalho, 
+automatiza tarefas repetitivas e padroniza o código, permitindo que desenvolvedores foquem na lógica específica da aplicação.
+Library sao conjuntos de componentes reutilizáveis focada em resolver um problema específico. 
+
+ 1 - instalando Angular
+ - npm install -g @angular/cli@16ng 
+ - para ver a versão ng version
+
+ 2 - Criar um pojeto
+ - ng new myApp
+
+3 - Entrar no projeto
+- cd myApp
+
+4 - Rodar
+- npm start
+- clicar com ctrl no http://localhost:4200/
+
+5 - Abrir outro terminal e deixar o antigo rodando. No novo rodar os componentes
+- ng generate component components/input (nome do componente é sempre depois da /)
+- para criar outro componente tem que rodar o comando acima e mudar o nome depois a /
+
+6 - no app.component.html
+- <app-button works /> ou <p> app </p>
+OBS: tambem da para fazer nos html que tem dentro dos componentes que criamos
+
+7 - para aparecer as coisas no localhost, tem que chamar no app.component.html
+
+8 - toda vez que for passar algo do componente filho para o pai, usar EventEmitter no arquivo ts do filho
+
+
+[] é Input
+() é Output
+
