@@ -11,6 +11,8 @@ import { NavComponent } from './share/nav/nav.component';
 import { MercadoPageComponent } from './feature/main-page/mercado-page/mercado-page.component';
 import { ComidaPageComponent } from './feature/main-page/comida-page/comida-page.component';
 import { CardComponent } from './share/card/card.component';
+import { ComidaModalComponent } from './feature/main-page/comida-page/comida-modal/comida-modal.component';
+
 
 @NgModule({
   declarations: [
@@ -22,8 +24,8 @@ import { CardComponent } from './share/card/card.component';
     NavComponent,
     MercadoPageComponent,
     ComidaPageComponent,
-    CardComponent
-    
+    CardComponent,
+    ComidaModalComponent
   ],
   imports: [
     BrowserModule,

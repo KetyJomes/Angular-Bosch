@@ -1,1 +1,11 @@
-<p>mercado-page works!</p>
+<section>
+    <div class="_mercados">
+         <h1 class="titulo">Mercado</h1>
+        <div class="_mercado" >
+            <app-card *ngFor="let market of mercados; track: $index"                                                                                                                                                                       
+                [infoMercado]="market">
+            </app-card>
+        </div>
+    </div>
+
+</section>

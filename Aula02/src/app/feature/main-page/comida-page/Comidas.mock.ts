@@ -1,19 +1,21 @@
 export interface IComida{
     id: number,
     name: string,
-    stock: number,
     value: number,
-    restaurant: string
+    establishment: string,
+    imagen: string,
     
 }
 
 const MockComidas: IComida[] = [  
-    { id: 1, name: "Pizza Margherita", stock: 20, value: 45, restaurant: "Bella Napoli" },
-    { id: 2, name: "Hambúrguer Artesanal", stock: 35, value: 28, restaurant: "Burger House" },
-    { id: 3, name: "Sushi Combo", stock: 15, value: 60, restaurant: "Sakura Sushi" },
-    { id: 4, name: "Salada Caesar", stock: 18, value: 22, restaurant: "Green Bowl" },
-    { id: 5, name: "Taco Mexicano", stock: 25, value: 18, restaurant: "El Sombrero" },
-    
+    { id: 1, name: "Pizza Margherita", value: 45, establishment: "Bella Napoli", imagen: "assets/pizza-marguerita.jpg" },
+    { id: 2, name: "Hambúrguer Artesanal", value: 28, establishment: "Burger House", imagen: "assets/hamburger_artesanal.jpg" },
+    { id: 3, name: "Sushi Combo", value: 60, establishment: "Sakura Sushi", imagen: "assets/sushi.webp" },
+    { id: 4, name: "Salada Caesar", value: 22, establishment: "Green Bowl", imagen: "assets/salada.jpg" },
+    { id: 5, name: "Taco Mexicano", value: 18, establishment: "El Sombrero", imagen: "assets/taco.jpg" },
+    { id: 6, name: "Frango Grelhado", value: 32, establishment: "Grill Master", imagen: "assets/bife-de-frango-grelhado.jpeg" },
+    { id: 7, name: "Pad Thai", value: 40, establishment: "Thai Express", imagen: "assets/pad.jpg" },
+    { id: 8, name: "Churrasco Misto", value: 55, establishment: "Brasa Gaúcha", imagen: "assets/churrasco.jpg" },
 ]
 
 export default MockComidas;

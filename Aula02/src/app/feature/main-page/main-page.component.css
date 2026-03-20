@@ -1,23 +1,26 @@
 .main-container{
     display: flex;
     background-color:antiquewhite;
-    color: gray;
-
-    .nome{
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    }
+    gap: 20px;
+    
 
     .card {
-    width: 350px;
-    min-height: 400px;  
+    width: 330px;
+    min-height: 350px;  
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 12px;
     background-color: white;
     margin: 20px; 
+    color: rgb(0, 0, 0);
+    
 }
 }
 
+.titulo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(247, 127, 0); 
+    margin-top: 20px;
+}

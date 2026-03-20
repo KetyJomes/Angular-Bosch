@@ -1,13 +1,29 @@
-<!-- 
-{{comidas[food].id}} -->
-<section>
+
+<!-- <section>
+    <h1 class="titulo">Comidas </h1>
     <div class="_comidas">
      
         <div class="_comida" >
-            <app-card *ngFor="let food of comidas; track: $index"                                                                                                                                                                       
+            <app-card *ngFor="let food of comidas ; track: $index"                                                                                                                                                                       
                 [infoComida]="food">
             </app-card>
         </div>
     </div>
+    
+</section> normal -->
 
+<section>
+    <h1 class="titulo">Comidas</h1>
+        <div class="_comidas">
+            <app-comida-modal> *ngIf="focusedFood"
+                [item]="focusedFood">
+            </app-comida-modal>
+            <div class="_comida">
+                <app-card *ngFor="let food of comidas ; track: $index"                                                                                                                                                                       
+                                [infoComida]="food"
+                                (click)="onCardClick(food)">
+                </app-card>
+            </div>
+        </div>
 </section>
+

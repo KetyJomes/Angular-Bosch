@@ -1,5 +1,26 @@
 
-<div class="card">
-    {{infoComida.name}}
-    {{infoComida.value}}
+<div class="main-container">
+  <div class="card">
+
+     <img 
+      [src]="infoComida?.imagen || infoMercado?.imagen" 
+      alt="Imagem do item"
+      class="food-image"
+    />
+    <h2 class="establishment">
+      {{infoComida?.establishment || infoMercado?.establishment}}
+    </h2>
+    
+    <div class="nameValue">
+      <p class="name">
+        {{infoComida?.name || infoMercado?.product}}
+        ...........
+      </p>
+  
+      <span class="value">
+        R$ {{infoComida?.value || infoMercado?.value}}
+      </span>
+    </div>
+  </div>
 </div>
+

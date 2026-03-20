@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IComida } from 'src/app/feature/main-page/comida-page/Comidas.mock';
+import { IMercado } from 'src/app/feature/main-page/mercado-page/Mercado.mock';
 
 @Component({
   selector: 'app-card',
@@ -9,5 +10,8 @@ import { IComida } from 'src/app/feature/main-page/comida-page/Comidas.mock';
 export class CardComponent {
   @Input()
   infoComida!: IComida
+
+  @Input()
+  infoMercado!: IMercado
 
 }

@@ -10,7 +10,36 @@ header{
     color: white;
 }
 
-.links{
-    display: flex;
-    gap: 1rem;
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.links {
+  display: flex;
+  gap: 1px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+/* .links a:hover {
+  color: #ffd966;
+} */
+
+.icon-link1 {
+    width: 60px;
+    height: 80px;
+    margin: 3px;  
+}
+
+.icon-link2 {
+    width: 50px;
+    height: 65px;
+    margin: 6px;
+    
 }

@@ -6,7 +6,7 @@ nav{
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0,0,0,0.375);
     padding: 1rem;
-    background-color: rgb(247, 127, 0);
+    background-color: rgb(165, 89, 8);
 
     section:first-child{
         display: flex;
@@ -14,4 +14,15 @@ nav{
         align-items: start;
         gap: .5rem;
     }
+}
+
+nav a {
+  color: white; 
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffd966;
 }
