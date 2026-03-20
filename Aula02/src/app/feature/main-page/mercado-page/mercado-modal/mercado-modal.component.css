@@ -7,7 +7,6 @@
     background: rgba(0,0,0,0.5);
     z-index: 10;
 }
-
 .modal-container {
     position: fixed;
     top: 50%;
@@ -40,5 +39,3 @@
     font-family: 'Poppins', sans-serif;
   
 }
-
-

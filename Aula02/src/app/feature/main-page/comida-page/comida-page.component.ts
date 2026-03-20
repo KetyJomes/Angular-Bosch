@@ -8,13 +8,14 @@ import MockComidas, {IComida} from './Comidas.mock';
 })
 export class ComidaPageComponent {
   protected comidas: IComida[] = []
-  protected focusedfood?: IComida;
 
   constructor () {
     this.comidas = MockComidas;
   }
+  
+  focusedFood?: IComida;
 
-  onCardClick = (item: IComida) => {
-    this.focusedfood = item
+  onCardClick(food: IComida) {
+    this.focusedFood = food;
   }
 }

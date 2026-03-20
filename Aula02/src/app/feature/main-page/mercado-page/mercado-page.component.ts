@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import MockMercados, { IMercado } from 'src/app/feature/main-page/mercado-page/Mercado.mock';
 
 @Component({
@@ -12,6 +12,11 @@ export class MercadoPageComponent {
   constructor () {
     this.mercados = MockMercados;
    
+  }
+  focusedMarket?: IMercado;
+
+  onCardClick(market: IMercado) {
+    this.focusedMarket = market;
   }
 
 }

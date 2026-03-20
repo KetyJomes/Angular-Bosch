@@ -10,7 +10,7 @@ export class ComidaModalComponent {
     @Input()
     item?: IComida
     @Output()
-    onClose: EventEmitter<void> = new EventEmitter();
+    onClose: EventEmitter<void> = new EventEmitter<void>();
 
     toggleClose = () => {
       this.onClose.emit();
