@@ -1,22 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ShareComponent } from './share/share.component';
-import { FeatureComponent } from './feature/feature.component';
 import { HeaderComponent } from './share/header/header.component';
+import { SquareComponent } from './share/square/square.component';
+import { LoginPageComponent } from './feature/main-page/login-page/login-page.component';
+import { RegisterPageComponent } from './feature/main-page/register-page/register-page.component';
+import { MainPageComponent } from './feature/main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShareComponent,
-    FeatureComponent,
-    HeaderComponent
+    HeaderComponent,
+    SquareComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
+    MainPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

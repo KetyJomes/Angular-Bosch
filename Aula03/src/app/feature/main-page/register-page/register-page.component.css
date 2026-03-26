@@ -1,0 +1,30 @@
+button {
+  background-color: rgb(162, 170, 77);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: block;       
+  margin: 1rem auto;    
+}
+
+button:hover {
+  background-color: rgb(140, 148, 67);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+  font-size: 32px;
+  color: white; 
+  background-color: rgb(162, 170, 77); 
+  margin: 0; 
+  padding: 1.5rem 0; 
+  text-align: center; 
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}

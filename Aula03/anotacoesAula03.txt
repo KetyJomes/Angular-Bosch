@@ -1,0 +1,6 @@
+26/03/2026
+
+Aula03
+
+para criar o arquivo app-routing.modules.ts:
+ng generate module app-routing --flat --module=app
